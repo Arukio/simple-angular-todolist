@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Belajar Angular</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-controller="index">
+    <div class="form-group">
+      <h1>To-Do <small>List</small></h1>
+    		<form role="form">
+        		<input type="text" class="form-control" placeholder="Nama Tugas" ng-model="todo">
+    		</form>
+    		<button type="button" class="btn btn btn-primary" ng-click="tambah()">Tambah</button>
+    </div>
+    <p>Jumlah Todo : {{total()}}</p>
+    <p><a ng-click="reset()">Hapus</a></p>
+    <ul class="list-unstyled" id="todo" ng-repeat="data in list">
+    	<li><pre>
+    	<input type="checkbox" ng-model="data.done"><span ng-class="{off: data.done}">{{data.text}}</span>
+    	</pre></li>
+    </ul>
+</body>
+</html>

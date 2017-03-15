@@ -1,0 +1,28 @@
+form {
+    display: inline-block;
+}
+.form-group {
+    text-align: center;
+    padding-bottom: 25px;
+}
+#todo {
+    margin: 0 auto;
+    width: 280px;
+    font-family: font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.off {
+  text-decoration: line-through;
+}
+p{
+	text-align: center;
+}
+li {
+	text-align: left;
+}
+span {
+	font-size: 20px;
+}
+pre {
+	padding-left: 0px;
+}
